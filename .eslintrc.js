@@ -28,10 +28,10 @@ module.exports = {
       "error",
       "unix"
     ],
-    "quotes": [
-      "error",
-      "double"
-    ],
+    // "quotes": [
+    //   "error",
+    //   "double"
+    // ],
     "semi": [
       "error",
       "never"
