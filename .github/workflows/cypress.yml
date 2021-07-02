@@ -1,19 +1,14 @@
-name: cypress
+# name: cypress
 
-on:
-  push:
-    branches:
-      - master
+# on:
+#   push:
+#     branches:
+#       - master
 
-jobs:
-  cypress:
-    runs-on: ubuntu-18.04
-    steps:
-      # - name: Setup npm package
-      #   run: npm install
-      - name: e2e tests
-        uses: cypress-io/github-action@v2
-        with:
-          command: npm run test:e2e
-          start: npm run start-prod
-          wait-on: http://localhost:5000
+# jobs:
+#   cypress:
+#     runs-on: ubuntu-18.04
+#     steps:
+#       - name: Setup npm package
+#         run: npm install
+      
