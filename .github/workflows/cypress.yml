@@ -9,8 +9,8 @@ jobs:
   cypress:
     runs-on: ubuntu-18.04
     steps:
-      - name: Setup npm package
-        run: npm install
+      # - name: Setup npm package
+      #   run: npm install
       - name: e2e tests
         uses: cypress-io/github-action@v2
         with:
