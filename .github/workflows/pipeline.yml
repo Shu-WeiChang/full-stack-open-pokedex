@@ -27,6 +27,4 @@ jobs:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "githubaction3" #Must be unique in Heroku
           heroku_email: "nba820908@gmail.com"
-          healthcheck: "https://githubaction3.herokuapp.com/health"
-          checkstring: "ok"
-          rollbackonhealthcheckfailed: true
+
