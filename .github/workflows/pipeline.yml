@@ -21,15 +21,12 @@ jobs:
         run: npm build
       - name: npm test
         run: npm test
-      - name: e2e tests
-        uses: cypress-io/github-action@v2
-        with:
-          start: npm run start-prod
-          command: npm run test:e2e
-          wait-on: http://localhost:5000
       - name: heroku
         uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "githubaction3" #Must be unique in Heroku
-          heroku_email: "nba820908@gmail.com"      
+          heroku_email: "nba820908@gmail.com"
+          healthcheck: "https://githubaction3.herokuapp.com/health"
+          checkstring: "ok"
+          rollbackonhealthcheckfailed: true
