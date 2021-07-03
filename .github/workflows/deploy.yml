@@ -17,3 +17,4 @@ jobs:
           heroku_email: "nba820908@gmail.com"
           healthcheck: "https://githubaction2.herokuapp.com/health"
           checkstring: "ok"
+          rollbackonhealthcheckfailed: true
